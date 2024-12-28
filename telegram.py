@@ -17,11 +17,19 @@ def send_health_check(message):
     except Exception as e:
         bot.reply_to(message, f'error: {e}')
         
+@bot.message_handler(commands=['poweroff'])
+def send_health_check(message):
+    try:
+        bot.reply_to(message, 'Shutting Down System')
+        poweroff()
+    except Exception as e:
+        bot.reply_to(message, f'error: {e}')
+        
 # Define a message handler
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     try:
-        bot.reply_to(message, "Successfully printed")
+        # bot.reply_to(message, "Successfully printed")
         if message.text[:7] == "[plain]":
             print(message.text)
             err, msg = print_plain(message.text[7:])
