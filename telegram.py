@@ -21,6 +21,7 @@ def send_health_check(message):
 def send_health_check(message):
     try:
         bot.reply_to(message, 'Shutting Down System')
+        print_plain("System Off.")
         poweroff()
     except Exception as e:
         bot.reply_to(message, f'error: {e}')
@@ -61,7 +62,8 @@ def start_bot():
                 break
             time.sleep(10)
         else:
-            print_plain("Internet gagal tersambung. Cabut sumber daya dan sambungkan kembali setelah Wi-Fi dapat diakses.") 
+            print_plain("Internet gagal tersambung. Cabut sumber daya dan sambungkan kembali setelah Wi-Fi dapat diakses.")
+            print_plain("System Off.") 
             poweroff()
         
     send_startup_message()
