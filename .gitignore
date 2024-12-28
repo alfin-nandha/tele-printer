@@ -1,0 +1,4 @@
+config.py
+/tele
+__pycache__/
+*.pyc
