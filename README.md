@@ -99,11 +99,11 @@ Checks the server status:
   
 #### receipt format
 - tokopedia -> platform/ecomerce
-john doe -> customerName/receiverAddress
-jnt -> courier
-TKJNT-000007FW3NN -> resi
-1 salak A 500g -> item 1
-1 nangka A 500g -> item 2
+- john doe -> customerName/receiverAddress
+- jnt -> courier
+- TKJNT-000007FW3NN -> resi
+- 1 salak A 500g -> item 1
+- 1 nangka A 500g -> item 2
 
 #### [plain]
 - Use this prefix to print plain text on the thermal printer (no special formatting). The printer will print the content exactly as entered after the prefix.
