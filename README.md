@@ -5,9 +5,11 @@
 4. [Technology stack](#4-technology-stack) <br/>
 5. [Architecture](#5-architecture) <br/>
 6. [Flow diagram](#6-flow-diagram) <br/>
-7.  [Tools](#7-tools) <br/>
-8.  [Running application](#8-running-application) <br/>
-9.  [Chatbot Command](#9-chatbot-command) <br/>
+7. [Tools](#7-tools) <br/>
+8. [Config](#8-config) <br/>
+8. [Running Application](#9-running-application) <br/>
+9. [Chatbot Command](#10-chatbot-command) <br/>
+
 
 
 ### 1. Version
@@ -98,12 +100,14 @@ Checks the server status:
 - Safely shuts down the server.
   
 #### receipt format
-- tokopedia -> platform/ecomerce
-- john doe -> customerName/receiverAddress
-- jnt -> courier
-- TKJNT-000007FW3NN -> resi
-- 1 salak A 500g -> item 1
-- 1 nangka A 500g -> item 2
+```
+tokopedia           -> platform/ecomerce
+john doe            -> customerName/receiverAddress
+jnt                 -> courier
+TKJNT-000007FW3NN   -> resi
+1 salak A 500g      -> item 1
+1 nangka A 500g     -> item 2
+```
 
 #### [plain]
 - Use this prefix to print plain text on the thermal printer (no special formatting). The printer will print the content exactly as entered after the prefix.
